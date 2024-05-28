@@ -29,6 +29,7 @@ public class ThreadTest02 {
         Thread t2 = new Thread(new ThreadExampleRunnable2("ME"));
         t1.setPriority(Thread.MAX_PRIORITY);
         t1.start();
+        // .join() vai fazer com o que a thread de prioridade na join determinada
         t1.join();
         t2.start();
     }
